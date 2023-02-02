@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.Material3.CardView.Filled"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_4dp"
+    android:layout_marginEnd="@dimen/_4dp"
+    android:layout_marginBottom="@dimen/_8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_repository_name"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginEnd="@dimen/_4dp"
+            android:paddingStart="@dimen/_4dp"
+            android:paddingTop="@dimen/_2dp"
+            android:paddingEnd="@dimen/_4dp"
+            android:paddingBottom="@dimen/_2dp"
+            android:textColor="@color/md_theme_light_primary"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/iv_share"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Repository name" />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="@dimen/_25dp"
+            android:layout_height="@dimen/_25dp"
+            android:layout_marginStart="@dimen/_4dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:background="?actionBarItemBackground"
+            android:contentDescription="@string/image_description"
+            android:src="@drawable/ic_share"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_repository_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4dp"
+            android:layout_marginEnd="@dimen/_4dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:ellipsize="end"
+            android:justificationMode="inter_word"
+            android:maxLines="2"
+            android:paddingStart="@dimen/_4dp"
+            android:paddingTop="@dimen/_2dp"
+            android:paddingEnd="@dimen/_4dp"
+            android:paddingBottom="@dimen/_2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_repository_name"
+            tools:text="@string/dummy_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

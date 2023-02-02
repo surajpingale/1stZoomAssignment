@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">1stZoomAssignment</string>
+
+    <string name="landing_screen_label">Home</string>
+    <string name="repo_screen_label">Repo</string>
+
+    <string name="menu_add_repo">Add Repo</string>
+
+    <!-- Landing Screen Fragment   -->
+    <string name="text_no_data_landing_screen">Track your favourite repo with a Add Now Button.</string>
+
+    <!--  Repo Screen   -->
+    <string name="owner_name">Owner Name</string>
+    <string name="repository_name">Repository Name</string>
+    <string name="add_button">Add</string>
+    <string name="error_owner_name">Please insert owner name</string>
+    <string name="error_repository_name">Please insert Repository name</string>
+
+
+    <!--  Repository list item   -->
+    <string name="dummy_description">This your first repo of this Assignment. The app allows user to track their favorite github repositories and stores in local database</string>
+    <string name="description_empty">Description empty</string>
+    <string name="image_description">Share</string>
+    <string name="share_repository_name_and_url">Repository name - %1$s \nGithub url - %2$s</string>
+
+</resources>
